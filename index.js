@@ -49,3 +49,5 @@ function currentSlideBtnHighlight(currentSlide) {
     .querySelector(`button[data-slidebtn="${currentSlide}"]`)
     .classList.toggle("fa-circle")
 }
+
+setInterval(() => switchSlide(1), 5000)
