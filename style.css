@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel {
+  height: max-content;
+  position: relative;
+}
+
+.carousel ul {
+  list-style-type: none;
+}
+
+.btn-left,
+.btn-right {
+  width: max-content;
+  padding: 1rem;
+  background-color: #000;
+  opacity: 50%;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+  transition-duration: 0.1s;
+}
+.btn-right {
+  grid-column: -2 / -1;
+  justify-self: end;
+  right: 0;
+}
+
+.btn-left:hover,
+.btn-right:hover {
+  opacity: 70%;
+}
+
+.carousel img {
+  height: 600px;
+  width: 800px;
+  object-fit: cover;
+}
+
+button[data-slideBtn] {
+  outline: 0;
+  border: 0;
+  font-size: 2rem;
+  cursor: pointer;
+}

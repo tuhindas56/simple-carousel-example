@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel 2</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="index.js"></script>
+  </head>
+  <body>
+    <section>
+      <div class="carousel">
+        <button class="btn-left">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="3em"
+            fill="#fff"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M 16 256 Q 17 191 48 136 L 48 136 L 48 136 Q 80 81 136 48 Q 193 16 256 16 Q 319 16 376 48 Q 432 81 464 136 Q 495 191 496 256 Q 495 321 464 376 Q 432 431 376 464 Q 319 496 256 496 Q 193 496 136 464 Q 80 431 48 376 Q 17 321 16 256 L 16 256 Z M 512 256 Q 511 186 478 128 L 478 128 L 478 128 Q 444 70 384 34 Q 323 0 256 0 Q 189 0 128 34 Q 68 70 34 128 Q 1 186 0 256 Q 1 326 34 384 Q 68 442 128 478 Q 189 512 256 512 Q 323 512 384 478 Q 444 442 478 384 Q 511 326 512 256 L 512 256 Z M 290 130 L 170 250 L 290 130 L 170 250 Q 166 256 170 262 L 290 382 L 290 382 Q 296 386 302 382 Q 306 376 302 370 L 187 256 L 187 256 L 302 142 L 302 142 Q 306 136 302 130 Q 296 126 290 130 L 290 130 Z"
+            />
+          </svg>
+        </button>
+        <button class="btn-right">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="3em"
+            fill="#fff"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M 496 256 Q 495 321 464 376 L 464 376 L 464 376 Q 432 431 376 464 Q 319 496 256 496 Q 193 496 136 464 Q 80 431 48 376 Q 17 321 16 256 Q 17 191 48 136 Q 80 81 136 48 Q 193 16 256 16 Q 319 16 376 48 Q 432 81 464 136 Q 495 191 496 256 L 496 256 Z M 0 256 Q 1 326 34 384 L 34 384 L 34 384 Q 68 442 128 478 Q 189 512 256 512 Q 323 512 384 478 Q 444 442 478 384 Q 511 326 512 256 Q 511 186 478 128 Q 444 70 384 34 Q 323 0 256 0 Q 189 0 128 34 Q 68 70 34 128 Q 1 186 0 256 L 0 256 Z M 222 382 L 342 262 L 222 382 L 342 262 Q 346 256 342 250 L 222 130 L 222 130 Q 216 126 210 130 Q 206 136 210 142 L 325 256 L 325 256 L 210 370 L 210 370 Q 206 376 210 382 Q 216 386 222 382 L 222 382 Z"
+            />
+          </svg>
+        </button>
+        <ul>
+          <li>
+            <img src="../assets/1.jpg" alt="1" data-slide="0" />
+          </li>
+          <li>
+            <img src="../assets/2.jpg" alt="2" hidden data-slide="1" />
+          </li>
+          <li>
+            <img src="../assets/3.jpg" alt="3" hidden data-slide="2" />
+          </li>
+          <li>
+            <img src="../assets/4.png" alt="4" hidden data-slide="3" />
+          </li>
+          <li>
+            <img src="../assets/5.jpg" alt="5" hidden data-slide="4" />
+          </li>
+        </ul>
+        <button class="fa-regular fa-circle-dot" data-slidebtn="0"></button>
+        <button class="fa-regular fa-circle" data-slidebtn="1"></button>
+        <button class="fa-regular fa-circle" data-slidebtn="2"></button>
+        <button class="fa-regular fa-circle" data-slidebtn="3"></button>
+        <button class="fa-regular fa-circle" data-slidebtn="4"></button>
+      </div>
+    </section>
+  </body>
+</html>
